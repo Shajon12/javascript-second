@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #19c5e8;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    display: grid;
+}
+.container form{
+    width: 500px;
+    background: linear-gradient(45deg, yellowgreen, #cd2727ba);
+    margin: auto;
+    padding:20px;
+    animation: linearbg infinite ;
+    animation-duration: 3s;
+}
+@keyframes linearbg{
+    0%{
+        background: rgb(7,104,135);
+    }
+    10%{
+        background: rgb(20, 110, 139);
+    }
+
+    20%{
+        background: #0475b6;
+    }
+    30%{
+        background: #016e75;
+    }
+    40%{
+        background: #06b4f8;
+    }
+    50%{
+        background: #0878c4;
+    }
+    60%{
+        background: #026dfa;
+    }
+
+    70%{
+        background: #0d87eb;
+    }
+    80%{
+        background: #087ad8;
+    }
+    90%{
+        background: #0791c7;
+    }
+    100%{
+        background: #0972b8;
+    }
+
+
+}
+.container form .todo-input{
+    width: 88%;
+    padding: 8px;
+    border: none;
+    outline: none;
+    color: rgb(10, 10, 10);
+    background-color: white;
+    font-weight: bold;
+    font-size: 16px;
+}
+.container form .todo-input::placeholder{
+    font-size: 12px;
+}
+.container form .todo-button{
+    padding: 9px 15px;
+    border: none;
+    background-color: yellowgreen;
+    color: white;
+    font-weight: bold;
+    transition: all 0.4s ease;
+    font-family:'cascadia';
+    cursor: pointer;
+    float: left;
+}
+.container form .todo-button:hover{
+    background-color: #978181;
+}
+.todo-container{
+    padding: 10px;
+    width: 500px;
+    margin: auto;
+}
+.todo-container .todo-list{
+    list-style: none;
+    font-size: 18px;
+}
+.todo-container .todo-list li {
+    width: 380px;
+    float: left;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+button.checkbutton,button.trasgbutton {
+    padding: 13px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    background: green;
+    font-size: 13px;
+    margin-right: 10px;
+}
+button.trasgbutton {
+    padding: 13px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    background: rgb(245, 7, 7);
+    font-size: 13px;
+    margin-top: 10px;
+}
